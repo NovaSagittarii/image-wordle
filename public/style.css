@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+html {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery > * {
+  width: 16.66%;
+  opacity: 0.8;
+  border: transparent 5px solid;
+  box-sizing: border-box;
+  transition: all 0.2s ease-out;
+}
+.gallery > *:hover, .gallery > .selected {
+  opacity: 1.0;
+}
+.gallery > .selected {
+  pointer-events: none;
+}
+.gallery > .green { border-color: green; }
+.gallery > .yellow { border-color: goldenrod; }
+.gallery > .gray { border-color: gray; }
